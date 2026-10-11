@@ -1,0 +1,21 @@
+# CMake build trees
+build/
+build-*/
+cmake-build-*/
+CMakeUserPresets.json
+
+# Training outputs and generated datasets
+runs/
+*.csv
+
+# Editors and tooling
+.vscode/
+.idea/
+.cache/
+compile_commands.json
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
