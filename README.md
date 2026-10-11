@@ -211,10 +211,6 @@ gbx::Explanation why = gbx::explain_prediction(p, data.X.row(0));
 - **Why hash everything?** A model is only reproducible if its exact inputs are known. Hashes turn "I think this is the data we used" into a check that either passes or fails.
 - **Known limitation:** bit-for-bit reproduction is guaranteed on the same platform and toolchain. Across platforms, `std::log`, `std::exp` and the compiler's floating-point code generation can differ in the last bit, so `verify` reports a mismatch rather than silently accepting it.
 
-## Background
-
-I built this project to put into practice, in C++, the supervised-learning foundations from my Coursera certificate in regression and classification: cost functions, gradient descent, feature scaling, regularisation, and the logistic model. I extended them with the evaluation, explainability and traceability practices that trustworthy AI systems need.
-
 ## Roadmap
 
 - Multiclass (softmax) regression and polynomial feature expansion
